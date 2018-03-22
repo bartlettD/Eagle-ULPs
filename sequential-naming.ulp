@@ -52,7 +52,7 @@ void main(void) {
 					
 					sprintf(new_name, "%s%d%s", prefix, value, suffix);
 					
-			        sprintf(s, "NAME %s %s;\n", I.part.name, new_name);
+			        	sprintf(s, "NAME %s %s;\n", I.part.name, new_name);
 					cmd += s;
 					
 					sprintf(s, "%s to %s\n", I.part.name, new_name);
