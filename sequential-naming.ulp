@@ -63,6 +63,30 @@ void main(void) {
 			}
 		}
 	}
+
+	if (deviceset)
+	{
+		deviceset(D)
+		{
+			D.gates(G)
+			{
+				if (ingroup(G))
+				{
+					sheet_has_group = 1;
+					
+					sprintf(new_name, "%s%d%s", prefix, value, suffix);
+					
+			        sprintf(s, "NAME %s %s;\n", G.name, new_name);
+					cmd += s;
+					
+					sprintf(s, "%s to %s\n", G.name, new_name);
+					help += s;
+					
+					value++;
+				}
+			}
+		}
+	}
 	
 	if (sheet_has_group)
 	{
